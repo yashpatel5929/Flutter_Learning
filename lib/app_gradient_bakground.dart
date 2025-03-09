@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_learning/dice_roller.dart';
+import 'package:flutter_learning/splashscreen.dart';
 
 class appGradientBackground extends StatelessWidget {
   const appGradientBackground({super.key});
@@ -9,14 +10,13 @@ class appGradientBackground extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(
-          gradient: LinearGradient(colors: [Colors.blue, Colors.lightBlue],
-          begin: Alignment.topCenter,
-          end: Alignment.centerLeft)
-      ),
-      child: const Center(
-        child: DiceRoller()
+    return Center(
+      child: Container(
+        decoration: const BoxDecoration(
+            gradient: LinearGradient(colors: [Colors.purpleAccent, Colors.purple],
+            begin: Alignment.topCenter,
+            end: Alignment.centerLeft)
+        ),
       ),
     );
   }
